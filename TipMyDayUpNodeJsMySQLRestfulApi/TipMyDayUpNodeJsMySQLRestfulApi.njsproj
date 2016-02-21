@@ -31,12 +31,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
-    <Compile Include="routes\index.js" />
-    <Compile Include="routes\users.js" />
+    <Compile Include="routes\admin.js" />
+    <Compile Include="routes\competitions.js" />
+    <Compile Include="routes\teams.js" />
+    <Compile Include="routes\tips.js" />
+    <Compile Include="routes\results.js" />
     <Compile Include="bin\www" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
+    <Content Include="views\admin.ejs" />
+    <Content Include="views\error.ejs" />
     <Content Include="views\index.jade" />
     <Content Include="views\layout.jade" />
     <Content Include="views\error.jade" />
