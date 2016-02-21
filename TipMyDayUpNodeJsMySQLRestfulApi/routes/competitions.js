@@ -5,13 +5,23 @@ var router = express.Router();
 router.get('/', function (req, res) {
     var mysql = require('mysql');
     
-    var mysqlConnection = mysql.createConnection({
+    var localhostSettings = {
         host: 'localhost',
         user: 'root',
         password: '',
         database: 'tipmydayup_db',
         debug: false
-    });
+    }
+
+    var testServerSettings = {
+        host: 'localhost',
+        user: 'fetkoli_fladmin',
+        password: 'krisani1977',
+        database: 'fetkoli_tipmydayup',
+        debug: false
+    }
+
+    var mysqlConnection = mysql.createConnection(localhostSettings);
     
     mysqlConnection.connect();
     
